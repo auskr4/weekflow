@@ -1,2 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --bg-custom: url('src/assets/image-mesh-gradient (4).png')
+}
+
+.bg-custom {
+  background-image: var(--bg-custom);
+}

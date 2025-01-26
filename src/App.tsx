@@ -66,7 +66,7 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 p-4">
+    <div className="min-h-screen bg-custom bg-cover bg-center p-4">
       <div className="max-w-sm mx-auto bg-white rounded-lg shadow">
         {days.map((day) => (
           <div
@@ -86,7 +86,7 @@ const App = () => {
                         <div
                           key={index}
                           className={`w-2 h-2 ${
-                            task.completed ? "bg-emerald-500" : "bg-orange-500"
+                            task.completed ? "bg-emerald-400" : "bg-zinc-500"
                           }`}
                         />
                       ))}
@@ -126,7 +126,7 @@ const App = () => {
                         <div
                           className={`w-4 h-4 border rounded cursor-pointer ${
                             task.completed
-                              ? "bg-emerald-500 border-emerald-500"
+                              ? "bg-emerald-500 border-emerald-400"
                               : "border-gray-400"
                           }`}
                           onClick={(e) => {
